@@ -1,0 +1,8 @@
+[user]
+	name = DESKTOP-NUOPUIF\\ITPS
+	email = heeheer_g@naver.com
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
