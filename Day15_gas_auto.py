@@ -13,12 +13,13 @@ def read_data():
     np_data = np.array(raw_data[2:])
     np_data = np_data[:, 2:].astype(np.int64)
     return np_data
+
 def get_corr(np_data):
    by_year = np.add.reduceat(np_data, np.arange(0, 130, 12))
    return np.corrcoef(by_year[:, 1], by_year[:,5])
 
 
-
+if__name__=='__main__':
 d = read_data()
 out = get_corr(d)
 print(out)
